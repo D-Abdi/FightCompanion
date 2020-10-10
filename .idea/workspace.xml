@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="+ Database opgezet&#10;+ Log in werkt&#10;+ Uitloggen werkt ook&#10;+ fighter model aangemaakt&#10;&#10;- Nog geen radio buttons aangemaakt voor de selectie tussen admin en fighter">
-      <change afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Profile link is toegevoegd. Lay out moet bijgewerkt worden.">
+      <change afterPath="$PROJECT_DIR$/public/css/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +209,7 @@
       <workItem from="1602080616637" duration="3606000" />
       <workItem from="1602098356608" duration="4000" />
       <workItem from="1602162028107" duration="599000" />
-      <workItem from="1602255339697" duration="4712000" />
+      <workItem from="1602255339697" duration="13981000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -234,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601904852200</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Profile link is toegevoegd. Lay out moet bijgewerkt worden.">
+      <created>1602322023951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602322023951</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +261,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="CSS werkt niet. Begin gemaakt aan de home page." />
     <MESSAGE value="+ Database opgezet&#10;+ Log in werkt&#10;+ Uitloggen werkt ook&#10;+ fighter model aangemaakt&#10;&#10;- Nog geen radio buttons aangemaakt voor de selectie tussen admin en fighter" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Database opgezet&#10;+ Log in werkt&#10;+ Uitloggen werkt ook&#10;+ fighter model aangemaakt&#10;&#10;- Nog geen radio buttons aangemaakt voor de selectie tussen admin en fighter" />
+    <MESSAGE value="Profile link is toegevoegd. Lay out moet bijgewerkt worden." />
+    <option name="LAST_COMMIT_MESSAGE" value="Profile link is toegevoegd. Lay out moet bijgewerkt worden." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601890221687">
@@ -299,10 +305,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601986428760" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601904860181">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602322027736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601904860181" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602322027736" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602328468792">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602328468792" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602085658247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
