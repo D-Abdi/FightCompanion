@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="+ Database opgezet&#10;+ Log in werkt&#10;+ Uitloggen werkt ook&#10;+ fighter model aangemaakt&#10;&#10;- Nog geen radio buttons aangemaakt voor de selectie tussen admin en fighter">
+      <change afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +180,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel\FightCompanion\app\Http\Controllers\Auth" />
+      <recent name="C:\xampp\htdocs\Laravel\FightCompanion\resources\views\auth" />
       <recent name="C:\xampp\htdocs\Laravel\FightCompanion\resources\views\layout\css" />
       <recent name="C:\xampp\htdocs\Laravel\FightCompanion\resources\views\layout" />
     </key>
@@ -201,6 +205,13 @@
       <workItem from="1601885320551" duration="222000" />
       <workItem from="1601885564167" duration="223000" />
       <workItem from="1601885853335" duration="14250000" />
+      <workItem from="1601985275475" duration="3088000" />
+      <workItem from="1602059559596" duration="4615000" />
+      <workItem from="1602065129070" duration="612000" />
+      <workItem from="1602080616637" duration="3606000" />
+      <workItem from="1602098356608" duration="4000" />
+      <workItem from="1602162028107" duration="599000" />
+      <workItem from="1602255339697" duration="4712000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -252,6 +263,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601890221687" />
+    <state x="533" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602321203329">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="533" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602321203329" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601988309378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601988309378" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601887923903">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -276,9 +295,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600160379198" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1601986428760">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601986428760" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601904860181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601904860181" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602085658247">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602085658247" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602064890566" />
   </component>
 </project>
