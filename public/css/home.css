@@ -1,0 +1,32 @@
+body{
+    background-color: #ffffff;
+}
+
+.navbar-logo {
+    width: 45px;
+    height: 45px;
+    margin: 0 1rem 0 0;
+}
+
+.home-image {
+    height: 600px;
+}
+
+.home-company-name {
+    text-align: center;
+    font-family: Stencil, sans-serif;
+    font-size: 62px;
+    margin-top: 250px;
+}
+
+.home-picandname {
+    margin-left: 125px;
+}
+
+.home-lookforagym {
+    font-family: Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+/*/
+

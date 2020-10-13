@@ -7,6 +7,7 @@
           <table class="profile-description-1">
               <thead>
               <tr>
+                  <th class="profile-description-text">Role</th>
                   <th class="profile-description-text">Name</th>
                   <th class="profile-description-text">Gym</th>
                   <th class="profile-description-text">Discipline</th>
@@ -15,6 +16,7 @@
               </thead>
               <tbody>
               <tr>
+                  <td class="profile-description-text">Coach</td>
                   <td class="profile-description-text">Daniel Abdi</td>
                   <td class="profile-description-text">KR Boxing</td>
                   <td class="profile-description-text">Boxing</td>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GymController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index']) ->name('profile');
+
+Route::get('/gym', [App\Http\Controllers\GymController::class, 'index']) ->name('gym');
+Route::post('/gym', [GymController::class, 'store']);
+Route::get('/gym/create', [GymController::class, 'create']);
+Route::get('/gym/{id}', [GymController::class, 'show']);

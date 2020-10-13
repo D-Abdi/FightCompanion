@@ -2,22 +2,16 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+    <div class="row justify-content-center home-picandname">
+        <h1 class="home-company-name">Fight Companion</h1>
+        <img src="css/images/homescreen.jpg" alt="dude flying in for a superman punch" class="home-image">
     </div>
+    <h2 class="row justify-content-center home-lookforagym">Look for a gym</h2>
+    <form class="form-group row justify-content-center" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit" class="btn btn-primary">
+            {{ __('Submit') }}
+        </button>
+    </form>
 </div>
 @endsection
