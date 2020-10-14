@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. Form can de gym/create is beetje gestyled. De url van de foto wordt nogsteeds letterlijk opgeslagen.">
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Gyms worden op de juiste manier opgeslagen in de database na aanmaken. Filestorage wordt op de juiste manier afgehandeld. Gym's moeten nog wel gekoppeld worden aan het account waar ze zijn aangemaakt.">
+      <change afterPath="$PROJECT_DIR$/public/css/gym.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gym/create-gym.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gym/create-gym.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/gym/gym.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gym/gym.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +220,8 @@
       <workItem from="1602580517188" duration="1219000" />
       <workItem from="1602597465705" duration="10288000" />
       <workItem from="1602663658792" duration="1605000" />
-      <workItem from="1602673737312" duration="5978000" />
+      <workItem from="1602673737312" duration="6134000" />
+      <workItem from="1602687260164" duration="3699000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -280,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602606865472</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Gyms worden op de juiste manier opgeslagen in de database na aanmaken. Filestorage wordt op de juiste manier afgehandeld. Gym's moeten nog wel gekoppeld worden aan het account waar ze zijn aangemaakt.">
+      <created>1602680076789</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602680076789</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +313,8 @@
     <MESSAGE value="Create pagina werkend gekregen. Nu de focus gelegt op het de sportscholen. Nu wil ik dat je de sportschool kan laten zien op de algemen pagina." />
     <MESSAGE value="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. De url wordt letterlijk opgeslagen." />
     <MESSAGE value="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. Form can de gym/create is beetje gestyled. De url van de foto wordt nogsteeds letterlijk opgeslagen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. Form can de gym/create is beetje gestyled. De url van de foto wordt nogsteeds letterlijk opgeslagen." />
+    <MESSAGE value="Gyms worden op de juiste manier opgeslagen in de database na aanmaken. Filestorage wordt op de juiste manier afgehandeld. Gym's moeten nog wel gekoppeld worden aan het account waar ze zijn aangemaakt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Gyms worden op de juiste manier opgeslagen in de database na aanmaken. Filestorage wordt op de juiste manier afgehandeld. Gym's moeten nog wel gekoppeld worden aan het account waar ze zijn aangemaakt." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601890221687">
@@ -354,14 +361,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601986428760" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602603716275">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602680079748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602603716275" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1602328468792">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602680079748" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602688229803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602328468792" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602688229803" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602678145818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
