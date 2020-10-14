@@ -8,9 +8,9 @@
     </div>
     <h2 class="row justify-content-center home-lookforagym">Look for a gym</h2>
     <form class="form-group row justify-content-center" action="action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit" class="btn btn-primary">
-            {{ __('Submit') }}
+        <input type="text" placeholder="Gym name.." name="search">
+        <button type="submit" class="btn btn-dark">
+            {{ __('Search') }}
         </button>
     </form>
 </div>

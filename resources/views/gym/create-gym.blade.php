@@ -6,7 +6,7 @@
             <div class="col-md-8">
                 <h1 class="" style="text-align:center;font-size: x-large">Create a gym</h1>
                     <div class="card-body">
-                        <form  method="post" action="/gym" enctype="multipart/form-data">
+                        <form  method="post" action="/gym"  enctype="multipart/form-data">
                             @csrf
                             <div class="form-group row">
                                 <label class="col-md-4 col-form-label text-md-right" for="titel">Gym Name</label>
