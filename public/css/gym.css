@@ -4,7 +4,11 @@
     width: 200px;
     border-radius: 5px;
     display: inline-block;
-    margin: 20px;
+    margin: 12px;
+}
+
+a {
+    color: black;
 }
 
 .gym-card:hover {

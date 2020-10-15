@@ -7,7 +7,7 @@
         <img src="css/images/homescreen.jpg" alt="dude flying in for a superman punch" class="home-image">
     </div>
     <h2 class="row justify-content-center home-lookforagym">Look for a gym</h2>
-    <form class="form-group row justify-content-center" action="action_page.php">
+    <form class="form-group row justify-content-center" action="">
         <input type="text" placeholder="Gym name.." name="search">
         <button type="submit" class="btn btn-dark">
             {{ __('Search') }}

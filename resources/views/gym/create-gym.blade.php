@@ -49,6 +49,54 @@
                             </div>
 
                             <div class="form-group row">
+                                <label class="col-md-4 col-form-label text-md-right" for="website">Website (optional)</label>
+
+                                <div class="col-md-6">
+                                    <input type="url" name="website"  class="form-control" id="website">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-4 col-form-label text-md-right" for="instagram">Instagram</label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="instagram"  class="form-control" id="instagram">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-4 col-form-label text-md-right" for="facebook">Facebook</label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="facebook"  class="form-control" id="facebook">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-4 col-form-label text-md-right" for="disciplines">Disciplines</label>
+                                <div class=" form-check form-check-inline">
+                                    <div class="col-md-6">
+                                        <label class="" for="disciplines">Boxing</label>
+                                        <input type="checkbox" name="disciplines"  class="form-check" value="Boxing">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="" for="disciplines">MMA</label>
+                                        <input type="checkbox" name="disciplines"  class="form-check" value="MMA">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="" for="disciplines">Kickboxing</label>
+                                        <input type="checkbox" name="disciplines"  class="form-check" value="Kickboxing">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="" for="disciplines">BJJ</label>
+                                        <input type="checkbox" name="disciplines"  class="form-check" value="BJJ">
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="form-group row">
                                 <label class="col-md-4 col-form-label text-md-right" for="Logo">Upload Logo</label>
 
                                 <div class="col-md-6">
