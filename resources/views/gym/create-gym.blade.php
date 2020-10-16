@@ -15,7 +15,8 @@
                                     <input type="text"
                                            name="name"
                                            id="name"
-                                           class="form-control @error('name') border-warning @enderror" value="{{old('name')}}">
+                                           class="form-control @error('name') border-warning @enderror"
+                                           value="{{old('name')}}">
 
                                     @error('name')
                                         <p class="text-warning">{{$errors->first('name')}}</p>

@@ -24,9 +24,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index']) ->name('profile');
 
-Route::get('/gym', [App\Http\Controllers\GymController::class, 'index']) ->name('gym');
+Route::get('/gym', [App\Http\Controllers\GymController::class, 'index']) ->name('gym.index');
 Route::post('/gym', [GymController::class, 'store']);
-Route::get('/gym/create', [GymController::class, 'create']);
-Route::get('/gym/{id}', [GymController::class, 'show']);
-Route::get('/gym/{id}/edit', [GymController::class, 'edit']);
+Route::get('/gym/create', [GymController::class, 'create'])->name('gym.create');
+Route::get('/gym/{id}', [GymController::class, 'show'])->name('gym.show');
+Route::get('/gym/{id}/edit', [GymController::class, 'edit'])->name('gym.edit');
 Route::put('/gym/{id}', [GymController::class, 'update']);
