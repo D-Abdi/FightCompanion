@@ -17,6 +17,14 @@
                                 </div>
 
                             <div class="form-group row">
+                                <label for="city" class="col-md-4 col-form-label text-md-right">City</label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="city" class="form-control" id="city">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
                                 <label for="adres" class="col-md-4 col-form-label text-md-right">Adres & Number</label>
 
                                 <div class="col-md-6">

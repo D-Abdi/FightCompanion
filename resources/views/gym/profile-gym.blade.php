@@ -13,7 +13,6 @@
                                 <div class="mt-3">
                                     <h4>{{$gym->name}}</h4>
                                     <p class="text-secondary mb-1" style="padding-bottom: 10px;">{{$gym->disciplines}}</p>
-                                    <button class="btn btn-primary">Follow</button>
                                     <button class="btn btn-outline-primary">Message</button>
                                 </div>
                             </div>
@@ -59,23 +58,54 @@
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
+                                    <h6 class="mb-0">City</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    {{$gym->city}}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
                                     <h6 class="mb-0">Adres and Zip code</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     {{$gym->adres}} - {{$gym->zip_code}}
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <h6 class="mb-0">Address</h6>
-                                </div>
-                                <div class="col-sm-9 text-secondary">
-                                    Bay Area, San Francisco, CA
-                                </div>
-                            </div>
                         </div>
                     </div>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Weightclass</th>
+                            <th scope="col">Height</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Discipline</th>
+                            <th scope="col">Competitive</th>
+                            <th scope="col">Record</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <td colspan="8">&copy; List of Fighters</td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Daniel Abdi</td>
+                            <td>64</td>
+                            <td>1.80</td>
+                            <td>21</td>
+                            <td>Boxing</td>
+                            <td>Yes</td>
+                            <td>2-0-0</td>
+                        </tr>
+                        </tbody>
+                    </table>
                     </div>
                 </div>
             </div>
