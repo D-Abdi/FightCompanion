@@ -11,8 +11,8 @@
                             <div class="d-flex flex-column align-items-center text-center">
                                 <img src="{{'/storage/logos/'.$gym->logo}}" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
-                                    <h4>{{$gym->name}}</h4>
-                                    <p class="text-secondary mb-1" style="padding-bottom: 10px;">{{$gym->disciplines}}</p>
+                                    <h4 class="cap">{{$gym->name}}</h4>
+                                    <p class="text-secondary mb-1 cap" style="padding-bottom: 10px;">{{$gym->disciplines}}</p>
                                     <button class="btn btn-outline-primary">Message</button>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                                 <div class="col-sm-3">
                                     <h6 class="mb-0">City</h6>
                                 </div>
-                                <div class="col-sm-9 text-secondary">
+                                <div class="col-sm-9 text-secondary cap">
                                     {{$gym->city}}
                                 </div>
                             </div>
