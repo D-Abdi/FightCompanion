@@ -28,3 +28,5 @@ Route::get('/gym', [App\Http\Controllers\GymController::class, 'index']) ->name(
 Route::post('/gym', [GymController::class, 'store']);
 Route::get('/gym/create', [GymController::class, 'create']);
 Route::get('/gym/{id}', [GymController::class, 'show']);
+Route::get('/gym/{id}/edit', [GymController::class, 'edit']);
+Route::put('/gym/{id}', [GymController::class, 'update']);

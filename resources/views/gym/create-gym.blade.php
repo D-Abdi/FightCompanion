@@ -12,15 +12,25 @@
                                 <label class="col-md-4 col-form-label text-md-right" for="titel">Gym Name</label>
 
                                 <div class="col-md-6">
-                                    <input type="text" name="name" id="name" class="form-control">
+                                    <input type="text" name="name" id="name" class="form-control @error('name') border-warning @enderror">
+
+                                    @error('name')
+                                        <p class="text-warning">{{$errors->first('name')}}</p>
+                                    @enderror
+
                                 </div>
-                                </div>
+                            </div>
 
                             <div class="form-group row">
                                 <label for="city" class="col-md-4 col-form-label text-md-right">City</label>
 
                                 <div class="col-md-6">
-                                    <input type="text" name="city" class="form-control" id="city">
+                                    <input type="text" name="city" class="form-control @error('city') border-warning @enderror" id="city">
+
+                                    @error('city')
+                                    <p class="text-warning">{{$errors->first('city')}}</p>
+                                    @enderror
+
                                 </div>
                             </div>
 
@@ -28,7 +38,12 @@
                                 <label for="adres" class="col-md-4 col-form-label text-md-right">Adres & Number</label>
 
                                 <div class="col-md-6">
-                                    <input type="text" name="adres" class="form-control" id="adres">
+                                    <input type="text" name="adres" class="form-control @error('adres') border-warning @enderror" id="adres">
+
+                                    @error('adres')
+                                    <p class="text-warning">{{$errors->first('adres')}}</p>
+                                    @enderror
+
                                 </div>
                             </div>
 
@@ -36,7 +51,12 @@
                                 <label class="col-md-4 col-form-label text-md-right" for="zip_code">Zip Code</label>
 
                                 <div class="col-md-6">
-                                    <input type="text" name="zip_code" class="form-control" id="zip_code">
+                                    <input type="text" name="zip_code" class="form-control @error('zip_code') border-warning @enderror" id="zip_code">
+
+                                    @error('zip_code')
+                                    <p class="text-warning">{{$errors->first('zip_code')}}</p>
+                                    @enderror
+
                                 </div>
                             </div>
 
@@ -44,20 +64,32 @@
                                 <label class="col-md-4 col-form-label text-md-right" for="phone_number">Phone Number</label>
 
                                 <div class="col-md-6">
-                                    <input type="number" name="phone_number"  class="form-control" id="phone_number">
+                                    <input type="number" name="phone_number"  class="form-control @error('phone_number') border-warning @enderror" id="phone_number">
+
+                                    @error('phone_number')
+                                    <p class="text-warning">{{$errors->first('phone_number')}}</p>
+                                    @enderror
+
                                 </div>
                             </div>
+
+
 
                             <div class="form-group row">
                                 <label class="col-md-4 col-form-label text-md-right" for="email">Email</label>
 
                                 <div class="col-md-6">
-                                    <input type="email" name="email"  class="form-control" id="email">
+                                    <input type="email" name="email"  class="form-control @error('email') border-warning @enderror" id="email">
+
+                                    @error('email')
+                                    <p class="text-warning">{{$errors->first('email')}}</p>
+                                    @enderror
+
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-md-4 col-form-label text-md-right" for="website">Website (optional)</label>
+                                <label class="col-md-4 col-form-label text-md-right" for="website">Website URL (optional)</label>
 
                                 <div class="col-md-6">
                                     <input type="url" name="website"  class="form-control" id="website">
@@ -65,7 +97,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-md-4 col-form-label text-md-right" for="instagram">Instagram</label>
+                                <label class="col-md-4 col-form-label text-md-right" for="instagram">Instagram (optional)</label>
 
                                 <div class="col-md-6">
                                     <input type="text" name="instagram"  class="form-control" id="instagram">
@@ -73,7 +105,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-md-4 col-form-label text-md-right" for="facebook">Facebook</label>
+                                <label class="col-md-4 col-form-label text-md-right" for="facebook">Facebook (optional)</label>
 
                                 <div class="col-md-6">
                                     <input type="text" name="facebook"  class="form-control" id="facebook">
@@ -84,22 +116,22 @@
                                 <label class="col-md-4 col-form-label text-md-right" for="disciplines">Disciplines</label>
                                 <div class=" form-check form-check-inline">
                                     <div class="col-md-6">
-                                        <label class="" for="disciplines">Boxing</label>
+                                        <label class="" for="Boxing">Boxing</label>
                                         <input type="checkbox" name="disciplines"  class="form-check" value="Boxing">
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label class="" for="disciplines">MMA</label>
+                                        <label class="" for="MMA">MMA</label>
                                         <input type="checkbox" name="disciplines"  class="form-check" value="MMA">
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label class="" for="disciplines">Kickboxing</label>
+                                        <label class="" for="Kickboxing">Kickboxing</label>
                                         <input type="checkbox" name="disciplines"  class="form-check" value="Kickboxing">
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label class="" for="disciplines">BJJ</label>
+                                        <label class="" for="BJJ">BJJ</label>
                                         <input type="checkbox" name="disciplines"  class="form-check" value="BJJ">
                                     </div>
                             </div>
@@ -108,7 +140,12 @@
                                 <label class="col-md-4 col-form-label text-md-right" for="Logo">Upload Logo</label>
 
                                 <div class="col-md-6">
-                                    <input type="file" name="logo" id="logo"  class="btn-light" accept="image/jpeg,image/png,image/jpg">
+                                    <input type="file" name="logo" id="logo"  class="btn-light" accept="image/jpeg,image/png,image/jpg" required>
+
+                                    @error('logo')
+                                    <p class="text-warning">{{$errors->first('logo')}}</p>
+                                    @enderror
+
                                 </div>
                             </div>
 
