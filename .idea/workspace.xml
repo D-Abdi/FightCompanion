@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Create pagina een beetje opgeruimd en data wordt nu terug geschreven als het invullen van het formulier faalt.">
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Controllers beetje opgeruimd (maar ik had wat problemen met het overnemen van video's op laracasts). Routes een naam gegeven en een path gemaakt vanuit de model voor stijl punten.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gym/create-gym.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gym/create-gym.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gym/gym.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gym/gym.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +226,9 @@
       <workItem from="1602777915415" duration="7875000" />
       <workItem from="1602833186992" duration="15285000" />
       <workItem from="1602858638419" duration="653000" />
-      <workItem from="1602873886306" duration="3806000" />
+      <workItem from="1602873886306" duration="5664000" />
+      <workItem from="1603186561367" duration="184000" />
+      <workItem from="1603186771341" duration="2963000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -341,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602859287574</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Controllers beetje opgeruimd (maar ik had wat problemen met het overnemen van video's op laracasts). Routes een naam gegeven en een path gemaakt vanuit de model voor stijl punten.">
+      <created>1602877795215</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1602877795215</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +384,8 @@
     <MESSAGE value="Seeders aangepast. Data beter verwerkt in gym-profiles. Checkboxes worden nog niet op de juiste manier verzonden." />
     <MESSAGE value="Edit page toegevoegd. Profielen links gegeven naar IG, FB en website. Error handling op voor create toegevoegd voor server en client side." />
     <MESSAGE value="Create pagina een beetje opgeruimd en data wordt nu terug geschreven als het invullen van het formulier faalt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create pagina een beetje opgeruimd en data wordt nu terug geschreven als het invullen van het formulier faalt." />
+    <MESSAGE value="Controllers beetje opgeruimd (maar ik had wat problemen met het overnemen van video's op laracasts). Routes een naam gegeven en een path gemaakt vanuit de model voor stijl punten." />
+    <option name="LAST_COMMIT_MESSAGE" value="Controllers beetje opgeruimd (maar ik had wat problemen met het overnemen van video's op laracasts). Routes een naam gegeven en een path gemaakt vanuit de model voor stijl punten." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601890221687">
@@ -391,6 +400,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601988309378" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603189409487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603189409487" />
     <state x="586" y="181" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1602876524553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -427,20 +440,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601986428760" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602859289695">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602877797364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602859289695" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602877797364" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602691257843" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1602850381000">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602850381000" />
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602688229803" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602782122682">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603189712821">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602782122682" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603189712821" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602678145818" />
   </component>
   <component name="XDebuggerManager">
