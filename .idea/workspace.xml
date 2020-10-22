@@ -22,10 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Gyms zijn gekoppeld aan user_id en worden mee verwijderd als de gebruiker weg gaat. factory's werken nog niet. Seeders wel.">
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Factory's voor users getests en het werkt. Laravel 8 command in tinker: User::factory()-&gt;make()-&gt;save();">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +230,8 @@
       <workItem from="1602858638419" duration="653000" />
       <workItem from="1602873886306" duration="5664000" />
       <workItem from="1603186561367" duration="184000" />
-      <workItem from="1603186771341" duration="5437000" />
+      <workItem from="1603186771341" duration="5757000" />
+      <workItem from="1603361535046" duration="1409000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -359,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603189957173</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Factory's voor users getests en het werkt. Laravel 8 command in tinker: User::factory()-&gt;make()-&gt;save();">
+      <created>1603192320854</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603192320854</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +403,8 @@
     <MESSAGE value="Create pagina een beetje opgeruimd en data wordt nu terug geschreven als het invullen van het formulier faalt." />
     <MESSAGE value="Controllers beetje opgeruimd (maar ik had wat problemen met het overnemen van video's op laracasts). Routes een naam gegeven en een path gemaakt vanuit de model voor stijl punten." />
     <MESSAGE value="Gyms zijn gekoppeld aan user_id en worden mee verwijderd als de gebruiker weg gaat. factory's werken nog niet. Seeders wel." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gyms zijn gekoppeld aan user_id en worden mee verwijderd als de gebruiker weg gaat. factory's werken nog niet. Seeders wel." />
+    <MESSAGE value="Factory's voor users getests en het werkt. Laravel 8 command in tinker: User::factory()-&gt;make()-&gt;save();" />
+    <option name="LAST_COMMIT_MESSAGE" value="Factory's voor users getests en het werkt. Laravel 8 command in tinker: User::factory()-&gt;make()-&gt;save();" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601890221687">
@@ -451,10 +459,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601986428760" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603189959450">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603192324059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603189959450" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603192324059" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602691257843" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1602850381000">
       <screen x="0" y="0" width="1536" height="824" />
