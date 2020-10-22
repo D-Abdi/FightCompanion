@@ -11,7 +11,9 @@
                     <h4 class="cap">{{$gym->name}}</h4>
                     <p>{{$gym->phone_number}}</p>
                     <p>{{$gym->email}}</p>
-                    <p class="cap">{{$gym->disciplines}}</p>
+                    @foreach($gym->disciplines as $disciplines)
+                    <p class="cap">{{$disciplines->name}}</p>
+                    @endforeach
                 </div>
             </div>
             </a>

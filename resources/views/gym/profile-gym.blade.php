@@ -11,9 +11,11 @@
                             <div class="d-flex flex-column align-items-center text-center">
                                 <img src="{{'/storage/logos/'.$gym->logo}}" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
-                                    <h4 class="cap">{{$gym->name}}</h4>
-                                    <p class="text-secondary mb-1 cap" style="padding-bottom: 10px;">{{$gym->disciplines}}</p>
-                                    <button class="btn btn-outline-primary">Message</button>
+                                    <h4 class="">{{$gym->name}}</h4>
+                                    @foreach($gym->disciplines as $disciplines)
+                                    <p class="text-secondary mb-1 cap" style="padding-bottom: 10px;">{{$disciplines->name}}</p>
+                                    @endforeach
+                                    <button class="btn btn-outline-primary d-block message">Message</button>
                                 </div>
                             </div>
                         </div>
