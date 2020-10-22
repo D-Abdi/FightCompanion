@@ -42,4 +42,8 @@ class User extends Authenticatable
         $this->hasOne(Gym::class);
     }
 
+    public function role() {
+        $this->hasOne(Role::class);
+    }
+
 }
