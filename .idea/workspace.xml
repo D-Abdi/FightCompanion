@@ -22,11 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Seeders aangepast en werken zoals verwacht.">
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Role_user werkt nog niet. My gym link werkt niet. Pagination op de gym overzicht werkt niet en ik weet nog niet hoe vechters toegevoegd gaan worden aan de gyms (proces). Maar de rolen en de connecties met elkaar zijn wel al vastgesteld.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +235,9 @@
       <workItem from="1603369361094" duration="102000" />
       <workItem from="1603369472869" duration="255000" />
       <workItem from="1603369737673" duration="4131000" />
-      <workItem from="1603380976619" duration="7305000" />
+      <workItem from="1603380976619" duration="7664000" />
+      <workItem from="1603636576835" duration="607000" />
+      <workItem from="1603641511066" duration="412000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -394,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603372925403</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Role_user werkt nog niet. My gym link werkt niet. Pagination op de gym overzicht werkt niet en ik weet nog niet hoe vechters toegevoegd gaan worden aan de gyms (proces). Maar de rolen en de connecties met elkaar zijn wel al vastgesteld.">
+      <created>1603390143507</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603390143507</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +441,8 @@
     <MESSAGE value="Factories voor gyms (die users automatisch erbij aanmaken) werken nu ook." />
     <MESSAGE value="Eindelijk de disciplines pivot table werkend gekregen. authenticatie wordt aan gewerkt." />
     <MESSAGE value="Seeders aangepast en werken zoals verwacht." />
-    <option name="LAST_COMMIT_MESSAGE" value="Seeders aangepast en werken zoals verwacht." />
+    <MESSAGE value="Role_user werkt nog niet. My gym link werkt niet. Pagination op de gym overzicht werkt niet en ik weet nog niet hoe vechters toegevoegd gaan worden aan de gyms (proces). Maar de rolen en de connecties met elkaar zijn wel al vastgesteld." />
+    <option name="LAST_COMMIT_MESSAGE" value="Role_user werkt nog niet. My gym link werkt niet. Pagination op de gym overzicht werkt niet en ik weet nog niet hoe vechters toegevoegd gaan worden aan de gyms (proces). Maar de rolen en de connecties met elkaar zijn wel al vastgesteld." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="183" key="#Log_Highlighting_(ideolog)" timestamp="1603382469709">
@@ -498,10 +505,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="65" width="981" height="707" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603369726372" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603372928428">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603390147227">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603372928428" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603390147227" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602691257843" />
     <state x="526" y="293" width="630" height="282" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1603369717707">
       <screen x="0" y="0" width="1536" height="824" />
