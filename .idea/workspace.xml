@@ -22,11 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Een gemaakt gym wordt gekoppeld aan de ingelogde gebruiker.">
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Create a gym en Join a gym worden op hun beurt getoond als de rol van de gebruiker overeenkomt met Coach of Fighter. Coach ziet de My Profile niet omdat het alleen voor vechters is. Het is nu via if's gedaan.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +239,7 @@
       <workItem from="1603380976619" duration="7664000" />
       <workItem from="1603636576835" duration="607000" />
       <workItem from="1603641511066" duration="1743000" />
-      <workItem from="1603700080084" duration="7249000" />
+      <workItem from="1603700080084" duration="13801000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -411,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603641957286</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Create a gym en Join a gym worden op hun beurt getoond als de rol van de gebruiker overeenkomt met Coach of Fighter. Coach ziet de My Profile niet omdat het alleen voor vechters is. Het is nu via if's gedaan.">
+      <created>1603709605841</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603709605841</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +459,8 @@
     <MESSAGE value="Seeders aangepast en werken zoals verwacht." />
     <MESSAGE value="Role_user werkt nog niet. My gym link werkt niet. Pagination op de gym overzicht werkt niet en ik weet nog niet hoe vechters toegevoegd gaan worden aan de gyms (proces). Maar de rolen en de connecties met elkaar zijn wel al vastgesteld." />
     <MESSAGE value="Een gemaakt gym wordt gekoppeld aan de ingelogde gebruiker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Een gemaakt gym wordt gekoppeld aan de ingelogde gebruiker." />
+    <MESSAGE value="Create a gym en Join a gym worden op hun beurt getoond als de rol van de gebruiker overeenkomt met Coach of Fighter. Coach ziet de My Profile niet omdat het alleen voor vechters is. Het is nu via if's gedaan." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a gym en Join a gym worden op hun beurt getoond als de rol van de gebruiker overeenkomt met Coach of Fighter. Coach ziet de My Profile niet omdat het alleen voor vechters is. Het is nu via if's gedaan." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="183" key="#Log_Highlighting_(ideolog)" timestamp="1603382469709">
@@ -517,24 +523,24 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="65" width="981" height="707" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603369726372" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603641961085">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603709607384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603641961085" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603709607384" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602691257843" />
     <state x="526" y="293" width="630" height="282" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1603369717707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="293" width="630" height="282" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603369717707" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1602850381000">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1603713474669">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602850381000" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603713474669" />
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602688229803" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603708273441">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603713358526">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603708273441" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603713358526" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602678145818" />
   </component>
   <component name="XDebuggerManager">
