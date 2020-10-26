@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name','last_name', 'email', 'DOB','password',
+        'role','first_name','last_name', 'email', 'DOB','password',
     ];
 
     /**
@@ -39,11 +39,11 @@ class User extends Authenticatable
     ];
 
     public function gym() {
-        $this->hasOne(Gym::class);
+        return $this->hasOne(Gym::class);
     }
 
     public function role() {
-        $this->hasOne(Role::class);
+        return $this->hasOne(Role::class);
     }
 
 }
