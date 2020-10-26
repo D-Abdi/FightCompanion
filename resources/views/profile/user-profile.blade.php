@@ -38,7 +38,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Email</h6>
+                                    <h6 class="mb-0">Weight</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     {{$attribute->weightclass}}
@@ -47,7 +47,7 @@
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Phone Number</h6>
+                                    <h6 class="mb-0">Height (cm)</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     {{$attribute->height}}
@@ -56,7 +56,7 @@
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">City</h6>
+                                    <h6 class="mb-0">Record (w-l-d)</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary cap">
                                     {{$attribute->record}}
@@ -65,7 +65,7 @@
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Adres and Zip code</h6>
+                                    <h6 class="mb-0">Active in Competition</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     {{$attribute->competitive}}

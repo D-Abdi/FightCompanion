@@ -22,16 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="attributes pivot table aangemaakt en gekoppeld aan disciplines en user. Controller voor attributes aangemaakt.">
-      <change afterPath="$PROJECT_DIR$/resources/views/profile/create-profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profile/user-profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FightCompanion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FightCompanion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="create en show profile werken allebei. Ik moet alleen bedenken hoe ik een vechter koppel aan de gym d.m.v een Join knop.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/user-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/user-profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +249,7 @@
       <workItem from="1603380976619" duration="7664000" />
       <workItem from="1603636576835" duration="607000" />
       <workItem from="1603641511066" duration="1743000" />
-      <workItem from="1603700080084" duration="20848000" />
+      <workItem from="1603700080084" duration="21564000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -440,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603716471461</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="create en show profile werken allebei. Ik moet alleen bedenken hoe ik een vechter koppel aan de gym d.m.v een Join knop.">
+      <created>1603723772628</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1603723772628</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +459,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CSS werkt niet. Begin gemaakt aan de home page." />
     <MESSAGE value="+ Database opgezet&#10;+ Log in werkt&#10;+ Uitloggen werkt ook&#10;+ fighter model aangemaakt&#10;&#10;- Nog geen radio buttons aangemaakt voor de selectie tussen admin en fighter" />
     <MESSAGE value="Profile link is toegevoegd. Lay out moet bijgewerkt worden." />
     <MESSAGE value="Persoonlijk profiel voorbereid. Moet nog connect worden met de database." />
@@ -484,7 +483,8 @@
     <MESSAGE value="Een gemaakt gym wordt gekoppeld aan de ingelogde gebruiker." />
     <MESSAGE value="Create a gym en Join a gym worden op hun beurt getoond als de rol van de gebruiker overeenkomt met Coach of Fighter. Coach ziet de My Profile niet omdat het alleen voor vechters is. Het is nu via if's gedaan." />
     <MESSAGE value="attributes pivot table aangemaakt en gekoppeld aan disciplines en user. Controller voor attributes aangemaakt." />
-    <option name="LAST_COMMIT_MESSAGE" value="attributes pivot table aangemaakt en gekoppeld aan disciplines en user. Controller voor attributes aangemaakt." />
+    <MESSAGE value="create en show profile werken allebei. Ik moet alleen bedenken hoe ik een vechter koppel aan de gym d.m.v een Join knop." />
+    <option name="LAST_COMMIT_MESSAGE" value="create en show profile werken allebei. Ik moet alleen bedenken hoe ik een vechter koppel aan de gym d.m.v een Join knop." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="183" key="#Log_Highlighting_(ideolog)" timestamp="1603382469709">
@@ -547,10 +547,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="65" width="981" height="707" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603369726372" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603716474735">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603723775151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603716474735" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603723775151" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602691257843" />
     <state x="526" y="293" width="630" height="282" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1603369717707">
       <screen x="0" y="0" width="1536" height="824" />
