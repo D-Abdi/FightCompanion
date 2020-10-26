@@ -23,6 +23,10 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index']) ->name('profile');
+Route::post('/profile', [\App\Http\Controllers\AttributeController::class, 'store']);
+Route::get('/profile/create', [App\Http\Controllers\AttributeController::class, 'create']) ->name('profile.create');
+Route::get('/profile/{id}', [\App\Http\Controllers\AttributeController::class, 'show'])->name('profile.show');
+
 
 Route::get('/gym', [App\Http\Controllers\GymController::class, 'index']) ->name('gym.index');
 Route::post('/gym', [GymController::class, 'store']);
