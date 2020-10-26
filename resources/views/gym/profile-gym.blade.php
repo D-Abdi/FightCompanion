@@ -15,7 +15,10 @@
                                     @foreach($gym->disciplines as $disciplines)
                                     <p class="text-secondary mb-1 cap" style="padding-bottom: 10px;">{{$disciplines->name}}</p>
                                     @endforeach
-                                    <button class="btn btn-outline-primary d-block message">Message</button>
+                                    <form method="post" action="/joinFightersList">
+                                        @csrf
+                                    <button type="submit" class="btn btn-outline-primary d-block message">Join Gym</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

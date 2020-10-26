@@ -50,4 +50,8 @@ class User extends Authenticatable
         return $this->hasOne(Attribute::class);
     }
 
+    public function listOfFighters() {
+        return $this->belongsTo(ListOfFighters::class);
+    }
+
 }
