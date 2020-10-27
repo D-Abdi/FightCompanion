@@ -22,9 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Koppel tabel gemaakt voor de users en gym, maar helaas wat problemen bij het submitten van de Join Gym. Invalid datetime format. En zonder timestamps, vraagt het naar timestamps.">
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Join werkt via Tinker om een user en gym te koppelen. Dit werkt nog niet op de front end. Daarnaast kan ik geen attributes laten zien.">
+      <change beforePath="$PROJECT_DIR$/.idea/FightCompanion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FightCompanion.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/gym/profile-gym.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gym/profile-gym.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,13 +75,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
@@ -140,7 +140,6 @@
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
@@ -166,6 +165,7 @@
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hXaowt0ZGY7qpr9KkP4diRo7jZ" />
@@ -251,7 +251,7 @@
       <workItem from="1603636576835" duration="607000" />
       <workItem from="1603641511066" duration="1743000" />
       <workItem from="1603700080084" duration="26950000" />
-      <workItem from="1603815092515" duration="8256000" />
+      <workItem from="1603815092515" duration="12713000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -456,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603730929339</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Join werkt via Tinker om een user en gym te koppelen. Dit werkt nog niet op de front end. Daarnaast kan ik geen attributes laten zien.">
+      <created>1603823616580</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1603823616580</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +482,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Persoonlijk profiel voorbereid. Moet nog connect worden met de database." />
     <MESSAGE value="Create pagina werkend gekregen. Nu de focus gelegt op het de sportscholen. Nu wil ik dat je de sportschool kan laten zien op de algemen pagina." />
     <MESSAGE value="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. De url wordt letterlijk opgeslagen." />
     <MESSAGE value="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. Form can de gym/create is beetje gestyled. De url van de foto wordt nogsteeds letterlijk opgeslagen." />
@@ -500,7 +506,8 @@
     <MESSAGE value="create en show profile werken allebei. Ik moet alleen bedenken hoe ik een vechter koppel aan de gym d.m.v een Join knop." />
     <MESSAGE value="Gegevens kloppend gemaakt voor user profile" />
     <MESSAGE value="Koppel tabel gemaakt voor de users en gym, maar helaas wat problemen bij het submitten van de Join Gym. Invalid datetime format. En zonder timestamps, vraagt het naar timestamps." />
-    <option name="LAST_COMMIT_MESSAGE" value="Koppel tabel gemaakt voor de users en gym, maar helaas wat problemen bij het submitten van de Join Gym. Invalid datetime format. En zonder timestamps, vraagt het naar timestamps." />
+    <MESSAGE value="Join werkt via Tinker om een user en gym te koppelen. Dit werkt nog niet op de front end. Daarnaast kan ik geen attributes laten zien." />
+    <option name="LAST_COMMIT_MESSAGE" value="Join werkt via Tinker om een user en gym te koppelen. Dit werkt nog niet op de front end. Daarnaast kan ik geen attributes laten zien." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="183" key="#Log_Highlighting_(ideolog)" timestamp="1603382469709">
@@ -563,10 +570,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="65" width="981" height="707" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603369726372" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603730931430">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603823620015">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603730931430" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603823620015" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602691257843" />
     <state x="570" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603730036240">
       <screen x="0" y="0" width="1536" height="824" />

@@ -104,7 +104,8 @@
                                 @foreach($gym->listOfFighters as $fighters)
                                 <td>{{$fighters->id}}</td>
                                 <td>{{$fighters->first_name}}</td>
-                                <td></td>
+{{--                                Heel rare error--}}
+                                <td>{{dd($fighters->attribute->height)}}</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
