@@ -50,8 +50,13 @@ class User extends Authenticatable
         return $this->hasOne(Attribute::class);
     }
 
+    public function Join(Gym $gym) {
+        return $this->listOfFighters()->save($gym);
+    }
+
+
     public function listOfFighters() {
-        return $this->belongsTo(ListOfFighters::class);
+        return $this->belongsToMany(Gym::class, 'list_of_fighters', 'user_id', 'gym_id');
     }
 
 }

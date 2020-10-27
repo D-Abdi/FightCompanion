@@ -80,37 +80,40 @@
                             </div>
                         </div>
                     </div>
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Weightclass</th>
-                            <th scope="col">Height</th>
-                            <th scope="col">Age</th>
-                            <th scope="col">Discipline</th>
-                            <th scope="col">Competitive</th>
-                            <th scope="col">Record</th>
-                        </tr>
-                        </thead>
-                        <tfoot>
-                        <tr>
-                            <td colspan="8">&copy; List of Fighters</td>
-                        </tr>
-                        </tfoot>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Daniel Abdi</td>
-                            <td>64</td>
-                            <td>1.80</td>
-                            <td>21</td>
-                            <td>Boxing</td>
-                            <td>Yes</td>
-                            <td>2-0-0</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Weight</th>
+                                <th scope="col">Height</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">Discipline</th>
+                                <th scope="col">Competitive</th>
+                                <th scope="col">Record</th>
+                            </tr>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <td colspan="8">&copy; List of Fighters</td>
+                            </tr>
+                            </tfoot>
+                            <tbody>
+                            <tr>
+
+                                @foreach($gym->listOfFighters as $fighters)
+                                <td>{{$fighters->id}}</td>
+                                <td>{{$fighters->first_name}}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    @endforeach
                     </div>
                 </div>
             </div>

@@ -22,11 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Gegevens kloppend gemaakt voor user profile">
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="Koppel tabel gemaakt voor de users en gym, maar helaas wat problemen bij het submitten van de Join Gym. Invalid datetime format. En zonder timestamps, vraagt het naar timestamps.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/gym/profile-gym.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gym/profile-gym.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +250,8 @@
       <workItem from="1603380976619" duration="7664000" />
       <workItem from="1603636576835" duration="607000" />
       <workItem from="1603641511066" duration="1743000" />
-      <workItem from="1603700080084" duration="26680000" />
+      <workItem from="1603700080084" duration="26950000" />
+      <workItem from="1603815092515" duration="8256000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -449,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603724190018</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Koppel tabel gemaakt voor de users en gym, maar helaas wat problemen bij het submitten van de Join Gym. Invalid datetime format. En zonder timestamps, vraagt het naar timestamps.">
+      <created>1603730929339</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1603730929339</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +475,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Profile link is toegevoegd. Lay out moet bijgewerkt worden." />
     <MESSAGE value="Persoonlijk profiel voorbereid. Moet nog connect worden met de database." />
     <MESSAGE value="Create pagina werkend gekregen. Nu de focus gelegt op het de sportscholen. Nu wil ik dat je de sportschool kan laten zien op de algemen pagina." />
     <MESSAGE value="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. De url wordt letterlijk opgeslagen." />
@@ -493,7 +499,8 @@
     <MESSAGE value="attributes pivot table aangemaakt en gekoppeld aan disciplines en user. Controller voor attributes aangemaakt." />
     <MESSAGE value="create en show profile werken allebei. Ik moet alleen bedenken hoe ik een vechter koppel aan de gym d.m.v een Join knop." />
     <MESSAGE value="Gegevens kloppend gemaakt voor user profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gegevens kloppend gemaakt voor user profile" />
+    <MESSAGE value="Koppel tabel gemaakt voor de users en gym, maar helaas wat problemen bij het submitten van de Join Gym. Invalid datetime format. En zonder timestamps, vraagt het naar timestamps." />
+    <option name="LAST_COMMIT_MESSAGE" value="Koppel tabel gemaakt voor de users en gym, maar helaas wat problemen bij het submitten van de Join Gym. Invalid datetime format. En zonder timestamps, vraagt het naar timestamps." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="183" key="#Log_Highlighting_(ideolog)" timestamp="1603382469709">
@@ -556,10 +563,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="65" width="981" height="707" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603369726372" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603723775151">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603730931430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603723775151" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603730931430" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602691257843" />
     <state x="570" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603730036240">
       <screen x="0" y="0" width="1536" height="824" />
@@ -574,10 +581,10 @@
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603713474669" />
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602688229803" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603730132583">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603822561917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603730132583" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603822561917" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602678145818" />
   </component>
   <component name="XDebuggerManager">
