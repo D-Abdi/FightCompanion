@@ -108,7 +108,7 @@
                                 <td>{{$fighters->attribute['disciplines'][0]['name']}}</td>
                                 <td>{{$fighters->attribute['competitive']}}</td>
                                 <td>{{$fighters->attribute['record']}}</td>
-                                <td><a href="{{route('profile.show', $fighters->id)}}" class="btn-sm btn-outline-dark gym-show-profile">Show Profile</a></td>
+                                <td><a href="{{route('profile.show', $fighters->attribute->id)}}" class="btn-sm btn-outline-dark gym-show-profile">Show Profile</a></td>
                             </tr>
                             @endforeach
                             </tbody>
