@@ -106,8 +106,7 @@
                                 <td>{{$fighters->attribute['weightclass']}}</td>
                                 <td>{{$fighters->attribute['height']}}</td>
                                 <td>{{$fighters->DOB}}</td>
-{{--                                Hier is een bug waarbij het gehele object van disciplines wordt getoond. In "name" gaan lukt niet.--}}
-                                <td>{{$fighters->attribute['disciplines']}}</td>
+                                <td>{{$fighters->attribute['disciplines'][0]['name']}}</td>
                                 <td>{{$fighters->attribute['competitive']}}</td>
                                 <td>{{$fighters->attribute['record']}}</td>
                             </tr>
