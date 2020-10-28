@@ -80,10 +80,9 @@
                             </div>
                         </div>
                     </div>
-                        <table class="table table-hover">
+                        <table class="table table-hover text-center">
                             <thead>
                             <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Weight</th>
                                 <th scope="col">Height (cm)</th>
@@ -91,6 +90,7 @@
                                 <th scope="col">Discipline</th>
                                 <th scope="col">Competitive</th>
                                 <th scope="col">Record</th>
+                                <th scope="col">Profile</th>
                             </tr>
                             </thead>
                             <tfoot>
@@ -101,7 +101,6 @@
                             <tbody>
                             @foreach($gym->listOfFighters as $fighters)
                             <tr>
-                                <td>{{$fighters->id}}</td>
                                 <td>{{$fighters->first_name}}</td>
                                 <td>{{$fighters->attribute['weightclass']}}</td>
                                 <td>{{$fighters->attribute['height']}}</td>
@@ -109,11 +108,11 @@
                                 <td>{{$fighters->attribute['disciplines'][0]['name']}}</td>
                                 <td>{{$fighters->attribute['competitive']}}</td>
                                 <td>{{$fighters->attribute['record']}}</td>
+                                <td><a href="{{route('profile.show', $fighters->id)}}" class="btn-sm btn-outline-dark gym-show-profile">Show Profile</a></td>
                             </tr>
                             @endforeach
                             </tbody>
                         </table>
-
                     </div>
                 </div>
             </div>

@@ -31,6 +31,11 @@ a {
     text-align: center;
 }
 
+.gym-show-profile:hover{
+    text-decoration: none;
+    transition: 0.4s;
+}
+
 .message {
     margin: 0 auto;
 }
