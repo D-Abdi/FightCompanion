@@ -15,7 +15,7 @@
                                     @foreach($gym->disciplines as $disciplines)
                                     <p class="text-secondary mb-1 cap" style="padding-bottom: 10px;">{{$disciplines->name}}</p>
                                     @endforeach
-                                    <form method="post" action="/joinFightersList">
+                                    <form method="post" action="/joinFightersList/{{$gym->id}}">
                                         @csrf
                                     <button type="submit" class="btn btn-outline-primary d-block message">Join Gym</button>
                                     </form>
@@ -87,7 +87,7 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Weight</th>
                                 <th scope="col">Height (cm)</th>
-                                <th scope="col">Age</th>
+                                <th scope="col">Date of Birth</th>
                                 <th scope="col">Discipline</th>
                                 <th scope="col">Competitive</th>
                                 <th scope="col">Record</th>
@@ -105,7 +105,7 @@
                                 <td>{{$fighters->first_name}}</td>
                                 <td>{{$fighters->attribute['weightclass']}}</td>
                                 <td>{{$fighters->attribute['height']}}</td>
-                                <td>{{$fighters->DOB}}</td>
+                                <td>{{\Carbon\Carbon::parse($fighters->DOB)->format('d/m/Y')}}</td>
                                 <td>{{$fighters->attribute['disciplines'][0]['name']}}</td>
                                 <td>{{$fighters->attribute['competitive']}}</td>
                                 <td>{{$fighters->attribute['record']}}</td>

@@ -50,7 +50,7 @@ class User extends Authenticatable
         return $this->hasOne(Attribute::class);
     }
 
-    public function Join(Gym $gym) {
+    public function join(Gym $gym) {
         return $this->listOfFighters()->save($gym);
     }
 

@@ -27,7 +27,7 @@ Route::post('/profile', [\App\Http\Controllers\AttributeController::class, 'stor
 Route::get('/profile/create', [App\Http\Controllers\AttributeController::class, 'create']) ->name('profile.create');
 Route::get('/profile/{id}', [\App\Http\Controllers\AttributeController::class, 'show'])->name('profile.show');
 
-Route::post('/joinFightersList', [\App\Http\Controllers\ListOfFightersController::class, 'store']);
+Route::post('/joinFightersList/{gym}', [\App\Http\Controllers\ListOfFightersController::class, 'store']);
 
 
 Route::get('/gym', [App\Http\Controllers\GymController::class, 'index']) ->name('gym.index');
