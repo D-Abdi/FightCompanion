@@ -22,8 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="dd() laat de gewenste value wel zien. Maar los niet.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="228bc566-26ed-461e-906e-fc60a905da30" name="Default Changelist" comment="attributes worden nu getoond, maar de disciplines worden alleen in object voor getoond. Bij name krijg je een undefined index error.">
       <change beforePath="$PROJECT_DIR$/resources/views/gym/profile-gym.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gym/profile-gym.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +248,7 @@
       <workItem from="1603641511066" duration="1743000" />
       <workItem from="1603700080084" duration="26950000" />
       <workItem from="1603815092515" duration="13009000" />
-      <workItem from="1603837218212" duration="5728000" />
+      <workItem from="1603837218212" duration="6036000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1600160190118</created>
@@ -468,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603828800413</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="attributes worden nu getoond, maar de disciplines worden alleen in object voor getoond. Bij name krijg je een undefined index error.">
+      <created>1603843003973</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1603843003973</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +493,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. De url wordt letterlijk opgeslagen." />
     <MESSAGE value="Alle gyms worden nu getoond op de /gym pagina. Afbeelding wordt alleen nog niet geladen. Form can de gym/create is beetje gestyled. De url van de foto wordt nogsteeds letterlijk opgeslagen." />
     <MESSAGE value="Gyms worden op de juiste manier opgeslagen in de database na aanmaken. Filestorage wordt op de juiste manier afgehandeld. Gym's moeten nog wel gekoppeld worden aan het account waar ze zijn aangemaakt." />
     <MESSAGE value="Opmaak aangepast en de informatie op een betere manier weergegeven. Volgende stap is een in depth profiel maken van elke gym." />
@@ -512,7 +517,8 @@
     <MESSAGE value="Koppel tabel gemaakt voor de users en gym, maar helaas wat problemen bij het submitten van de Join Gym. Invalid datetime format. En zonder timestamps, vraagt het naar timestamps." />
     <MESSAGE value="Join werkt via Tinker om een user en gym te koppelen. Dit werkt nog niet op de front end. Daarnaast kan ik geen attributes laten zien." />
     <MESSAGE value="dd() laat de gewenste value wel zien. Maar los niet." />
-    <option name="LAST_COMMIT_MESSAGE" value="dd() laat de gewenste value wel zien. Maar los niet." />
+    <MESSAGE value="attributes worden nu getoond, maar de disciplines worden alleen in object voor getoond. Bij name krijg je een undefined index error." />
+    <option name="LAST_COMMIT_MESSAGE" value="attributes worden nu getoond, maar de disciplines worden alleen in object voor getoond. Bij name krijg je een undefined index error." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="183" key="#Log_Highlighting_(ideolog)" timestamp="1603382469709">
@@ -575,10 +581,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="254" y="35" width="981" height="707" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603839500667" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603828802997">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603843009492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603828802997" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603843009492" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602691257843" />
     <state x="570" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603730036240">
       <screen x="0" y="0" width="1536" height="824" />

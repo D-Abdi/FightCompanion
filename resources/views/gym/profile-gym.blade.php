@@ -86,7 +86,7 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Weight</th>
-                                <th scope="col">Height</th>
+                                <th scope="col">Height (cm)</th>
                                 <th scope="col">Age</th>
                                 <th scope="col">Discipline</th>
                                 <th scope="col">Competitive</th>
@@ -99,8 +99,8 @@
                             </tr>
                             </tfoot>
                             <tbody>
+                            @foreach($gym->listOfFighters as $fighters)
                             <tr>
-                                @foreach($gym->listOfFighters as $fighters)
                                 <td>{{$fighters->id}}</td>
                                 <td>{{$fighters->first_name}}</td>
                                 <td>{{$fighters->attribute['weightclass']}}</td>
@@ -111,9 +111,10 @@
                                 <td>{{$fighters->attribute['competitive']}}</td>
                                 <td>{{$fighters->attribute['record']}}</td>
                             </tr>
+                            @endforeach
                             </tbody>
                         </table>
-                    @endforeach
+
                     </div>
                 </div>
             </div>
