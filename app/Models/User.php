@@ -42,8 +42,8 @@ class User extends Authenticatable
         return $this->hasOne(Gym::class);
     }
 
-    public function role() {
-        return $this->hasOne(Role::class);
+    public function hasGym() {
+        return $this->gym()->exists();
     }
 
     public function attribute() {
@@ -52,6 +52,18 @@ class User extends Authenticatable
 
     public function join(Gym $gym) {
         return $this->listOfFighters()->save($gym);
+    }
+
+    public function joined(Gym $gym) {
+        return $this->listOfFighters()->where('gym_id', $gym->id)->exists();
+    }
+
+    public function hasJoined() {
+        return $this->listOfFighters()->exists();
+    }
+
+    public function hasAttribute() {
+        return $this->attribute()->exists();
     }
 
 

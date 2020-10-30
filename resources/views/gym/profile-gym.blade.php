@@ -15,10 +15,16 @@
                                     @foreach($gym->disciplines as $disciplines)
                                     <p class="text-secondary mb-1 cap" style="padding-bottom: 10px;">{{$disciplines->name}}</p>
                                     @endforeach
-                                    <form method="post" action="/joinFightersList/{{$gym->id}}">
-                                        @csrf
-                                    <button type="submit" class="btn btn-outline-primary d-block message">Join Gym</button>
-                                    </form>
+                                    @can('imAFighter')
+                                        @if(auth()->user()->hasAttribute() == false)
+                                            <a class="btn-link text-decoration-none" href="{{route('profile.create')}}"><button type="submit" class="btn btn-outline-primary d-block message">Join Gym</button></a>
+                                        @elseif(auth()->user()->hasJoined() == false && auth()->user()->attribute !== null)
+                                            <form method="post" action="/joinFightersList/{{$gym->id}}">
+                                                @csrf
+                                                <button type="submit" class="btn btn-outline-primary d-block message">Join Gym</button>
+                                                </form>
+                                        @endif
+                                    @endcan
                                 </div>
                             </div>
                         </div>
