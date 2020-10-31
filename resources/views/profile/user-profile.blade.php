@@ -15,7 +15,9 @@
                                     @foreach($attribute->disciplines as $disciplines)
                                         <p class="text-secondary mb-1 cap" style="padding-bottom: 10px;">{{$disciplines->name}}</p>
                                     @endforeach
-                                    <button class="btn btn-outline-primary d-block message">Message</button>
+                                    @can('update', $attribute)
+                                    <button class="btn btn-outline-primary d-block message"><a href="{{route('profile.edit', auth()->user()->attribute->id)}}" class="text-decoration-none gym-link-styling">Edit</a></button>
+                                    @endcan
                                 </div>
                             </div>
                         </div>

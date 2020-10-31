@@ -114,7 +114,16 @@
                                 <td>{{$fighters->attribute['disciplines'][0]['name']}}</td>
                                 <td>{{$fighters->attribute['competitive']}}</td>
                                 <td>{{$fighters->attribute['record']}}</td>
-                                <td><a href="{{route('profile.show', $fighters->attribute->id)}}" class="btn-sm btn-outline-dark gym-show-profile">Show Profile</a></td>
+                                <td><button class="btn-sm btn-outline-dark gym-show-profile"><a href="{{route('profile.show', $fighters->attribute->id)}}" class="text-decoration-none gym-link-styling">Show</a></button></td>
+                                @can('update', $gym)
+                                    <td>
+                                        <form method="post" action="/gym/{{$fighters->id}}/deleteFighter" class="fighter_delete_form">
+                                            @csrf
+                                            <input type="hidden" value="_method" name="DELETE" />
+                                            <button type="submit" class="btn-sm btn-outline-danger gym-show-profile">Delete</button>
+                                        </form>
+                                    </td>
+                                @endcan
                             </tr>
                             @endforeach
                             </tbody>
@@ -123,6 +132,16 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    <script>
+        $(document).ready(function (){
+            $('.fighter_delete_form').on('submit', function (){
+                if(confirm('Are you sure you want to delete this user?')) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            });
+        });
+    </script>
 @endsection

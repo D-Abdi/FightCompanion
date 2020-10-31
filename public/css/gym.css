@@ -11,6 +11,10 @@ a {
     color: black;
 }
 
+.gym-link-styling:hover {
+    color: inherit;
+}
+
 .cap {
     text-transform: capitalize;
     display: inline-block;

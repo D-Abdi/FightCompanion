@@ -7,6 +7,7 @@ use App\Models\ListOfFighters;
 use App\Models\User;
 use Illuminate\Cache\LuaScripts;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
@@ -40,6 +41,7 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('hasAGym', function (User $user) {
             return $user->hasGym() == true;
         });
+
 
     }
 }
