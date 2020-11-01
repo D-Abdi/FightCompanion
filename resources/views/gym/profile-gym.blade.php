@@ -25,6 +25,11 @@
                                                 </form>
                                         @endif
                                     @endcan
+                                    @can('imACoach')
+                                        @if(auth()->user()->id == $gym->user_id)
+                                        <a class="btn-link text-decoration-none" href="{{route('gym.edit', $gym->id)}}"><button type="submit" class="btn btn-outline-primary d-block message">Edit Gym</button></a>
+                                        @endif
+                                    @endcan
                                 </div>
                             </div>
                         </div>

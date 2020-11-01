@@ -4,6 +4,7 @@
     <div class="container">
         <h1 class="text-center gym-h1">All Gym's</h1>
         <form class="form-group row justify-content-center" type="GET" action="{{route('gym.search')}}">
+            @csrf
             <div class="custom-control custom-switch gym-search-criteria">
                 <input type="checkbox" class="custom-control-input" id="website" name="website" value="{{true}}">
                 <label class="custom-control-label" for="website">Website?</label>
