@@ -85,30 +85,22 @@
                         <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right" for="disciplines">Disciplines</label>
                             <div class=" form-check form-check-inline">
-                                <div class="col-md-6">
-                                    <label class="" for="Boxing">Boxing</label>
-                                    <input type="checkbox" name="disciplines"  class="form-check" value="Boxing">
-                                </div>
+                                <select name="disciplines[]"
+                                        multiple
+                                        class="form-control"
+                                >
+                                    @foreach($disciplines as $discipline)
+                                        <option value="{{$discipline->id}}">{{$discipline->name}}</option>
+                                    @endforeach
+                                </select>
 
-                                <div class="col-md-6">
-                                    <label class="" for="MMA">MMA</label>
-                                    <input type="checkbox" name="disciplines"  class="form-check" value="MMA">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="" for="Kickboxing">Kickboxing</label>
-                                    <input type="checkbox" name="disciplines"  class="form-check" value="Kickboxing">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="" for="BJJ">BJJ</label>
-                                    <input type="checkbox" name="disciplines"  class="form-check" value="BJJ">
-                                </div>
+                                @error('disciplines')
+                                <p class="text-warning">{{$errors->first('disciplines')}}</p>
+                                @enderror
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right" for="Logo">Upload Logo</label>
-
                             <div class="col-md-6">
                                 <input type="file" name="logo" id="logo"  class="btn-light" accept="image/jpeg,image/png,image/jpg" value="{{$gym->logo}}">
                             </div>

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Attribute;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,7 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UsersTablesSeeder::class);
         $this->call(GymsTableSeeder::class);
+        $this->call(AttributesTableSeeder::class);
         $this->call(DisciplinesTableSeeder::class);
-        $this->call(RolesTableSeeder::class);
+        $this->call(ListOfFightersTableSeeder::class);
     }
 }
