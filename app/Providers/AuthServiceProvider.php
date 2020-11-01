@@ -38,8 +38,8 @@ class AuthServiceProvider extends ServiceProvider
             return $user->role == 'Coach';
         });
 
-        Gate::define('hasAGym', function (User $user) {
-            return $user->hasGym() == true;
+        Gate::define('hasNoGym', function (User $user) {
+            return $user->hasGym() == false;
         });
 
 

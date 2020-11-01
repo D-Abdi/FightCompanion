@@ -8,10 +8,10 @@
     </div>
 
     <h2 class="row justify-content-center home-lookforagym">Look for a gym</h2>
-    <form class="form-group row justify-content-center" action="">
-        <input type="text" placeholder="Gym name.." name="search">
-        <button type="submit" class="btn btn-dark">
-            {{ __('Search') }}
+    <form class="form-group row justify-content-center" type="GET" action="{{route('gym.search')}}">
+        <input type="text" class="gym-search-criteria" placeholder="Search Gym" name="query" >
+        <button type="submit" class="btn btn-dark gym-search-criteria">
+            Search
         </button>
     </form>
 </div>

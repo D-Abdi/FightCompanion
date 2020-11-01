@@ -1,3 +1,7 @@
+.gym-h1{
+    margin-bottom: 8px;
+}
+
 .gym-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -39,6 +43,11 @@ a {
     text-decoration: none;
     transition: 0.4s;
 }
+
+.gym-search-criteria {
+    margin: 0 5px;
+}
+
 
 .message {
     margin: 0 auto;
